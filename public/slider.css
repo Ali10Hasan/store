@@ -1,0 +1,155 @@
+.wrapperAll{
+    display: flex;
+    flex-direction: column;
+align-items: center;}
+.wrapper{
+   
+
+    margin-top:200px ;
+    max-width: 75%;
+    position: relative;
+}
+.wrapper1{
+    margin-top: 50px;
+    max-width: 80%;
+    position: relative;
+}
+
+.wrapper .carousel{
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+
+    scroll-behavior: smooth;
+}
+
+.wrapper1 .carousel1{
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging{
+    scroll-behavior: auto;
+    cursor: grab;
+}
+
+.carousel.dragging img{
+    pointer-events: none;
+ 
+}
+
+.carousel1.dragging{
+    scroll-behavior: auto;
+    cursor: grab;
+}
+
+.carousel1.dragging img{
+    pointer-events: none;
+ 
+}
+
+.wrapper svg{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+height: 50px;
+width: 50px;
+}
+
+.wrapper1 svg{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+height: 50px;
+width: 50px;
+}
+
+.wrapper svg:first-child{
+left: -50px;
+}
+.wrapper svg:last-child{
+right:-50px;
+
+}
+.wrapper1 svg:first-child{
+left: -50px;
+}
+.wrapper1 svg:last-child{
+right:-50px;
+
+}
+.carousel img{
+    height: 550px;
+    object-fit: cover;
+    width: calc(100% /3);
+margin-left: 18px;
+
+
+}
+.carousel1 img{
+    height: 300px;
+    object-fit: cover;
+    width: calc(100% /5);
+margin-left: 14px;
+
+
+}
+.carousel img:first-child{
+margin-left: 0px;
+
+}
+.carousel1 img:first-child{
+margin-left: 0px;
+
+}
+
+@media screen and (max-width:2000px) {
+.carousel img{
+    width: calc(100% /2);
+    
+}    
+.carousel1 img{
+    width: calc(100% /4);
+    
+}    
+
+}
+@media screen and (max-width:1000px) {
+.carousel img{
+    width: 100%;
+
+}    
+.carousel1 img{
+    width: calc(100% /3);
+
+}    
+}
+
+
+@media screen and (min-width:2000px) {
+    .swipper{
+        width: 85%;
+    }
+    .carousel img{
+        object-fit: contain;
+
+        height: 600px;
+        width: calc(100% /3);
+        margin-left: 14px;
+        
+    }    
+    .swipper1{
+        width: 85%;
+    }
+    .carousel1 img{
+        object-fit: contain;
+
+        height: 350px;
+        width: calc(100% /6);
+        margin-left: 14px;
+        
+    }    
+    }
